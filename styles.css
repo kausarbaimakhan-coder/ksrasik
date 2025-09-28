@@ -1,0 +1,202 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Навигационная панель */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007BFF;
+  padding: 20px;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+
+/* Главная страница */
+.home {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.home img {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Достопримечательности */
+.attractions {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.card {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Где остановиться */
+/* Where to Stay Section */
+/* Where to Stay Section */
+/* Where to Stay Section */
+/* Where to Stay Section */
+/* Where to Stay Section */
+/* Where to Stay Section */
+.accommodation {
+  padding: 50px 20px;
+  background-color: #e9ecef;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки для карточек */
+  gap: 20px;                             /* Пространство между карточками по вертикали и горизонтали */
+  width: 95%;                           /* Чтобы контейнер занимал всю ширину экрана */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #f9f9f9;
+  width: 95%;                           /* Чтобы карточки занимали всю доступную ширину */
+}
+
+.card img {
+  width: 100%;        /* Ширина 100% от блока */
+  height: 200px;      /* Устанавливаем фиксированную высоту для всех изображений */
+  object-fit: cover;  /* Сохраняем пропорции изображения */
+  border-radius: 15px 15px 0 0;  /* Закругленные углы у изображения */
+}
+
+
+
+/* Что попробовать */
+.cuisine {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.food-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.food-item {
+  width: 30%;
+  text-align: center;
+}
+
+.food-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Контакты */
+.contact {
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #007BFF;
+  color: white;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+  .card-container, .food-container {
+    flex-direction: column;
+  }
+
+  .card, .food-item {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
